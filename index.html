@@ -88,6 +88,18 @@
              $("#pricenft").text("$"+finalprice);
           });
        </script>
+           <script>
+            var settingsbnb = {
+               "url": "https://api.pancakeswap.info/api/v2/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+               "method": "GET",
+               "timeout": 0,
+            };
+            $.ajax(settingsbnb).done(function (response) {
+               var price = response.data["price"];
+               var finalprice = price.substr(0,6)
+               $("#pricebinance").text("$"+finalprice);
+            });
+         </script>
         <!-- <p style="margin-bottom: 0;">$TFDao Price: 
           <a href="https://poocoin.app/tokens/0x01f8f4ee7e57fb05884b7253e98fc11f8cb19ef3">
           <span id="pricebnb" style="color: #4caf50;font-weight: bold;"></span>
@@ -101,7 +113,11 @@
               <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
               <!-- <span>|</span> -->
               <img src="assets/img/logonft.svg?v=1.1" alt="">
-              <span id="pricenft" style="font-size: 14px;margin-top: 5px;color: #4caf50;">$0.0001212</span>
+              <span id="pricenft" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <!-- <span>|</span> -->
+              <img src="assets/img/bnb.svg?v=1.1" alt="">
+              <span id="pricebinance" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
             </div>
           </div>
         </div>  
