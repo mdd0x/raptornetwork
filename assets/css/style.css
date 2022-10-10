@@ -1593,6 +1593,11 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   position: relative;
 }
 
+.cardy{
+  background-color: #0e0d20 !important;
+    border-radius: 5px !important;
+    border-bottom: 5px solid #ff5722 !important;
+}
 .nftbox{
   padding: 20px;
 }
