@@ -1593,6 +1593,9 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   position: relative;
 }
 
+.nftbox{
+  padding: 20px;
+}
 .slick-slide > div {
   display: -webkit-box;
   display: -ms-flexbox;
