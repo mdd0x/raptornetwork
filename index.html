@@ -48,94 +48,27 @@
          <div class="container-fluid">
             <div class="row">
                <script>
-                  var settings = {
-                     "url": "https://api.pancakeswap.info/api/v2/tokens/0x47845c585650629b251e0fbe58d523e541c507db",
-                     "method": "GET",
-                     "timeout": 0,
-                  };
-                  $.ajax(settings).done(function (response) {
-                     var price = response.data["price"];
-                     var finalprice = price.substr(0,15)
-                     $("#pricebnb").text("$"+finalprice);
-                  });
+                var settings={url:"https://api.pancakeswap.info/api/v2/tokens/0x47845c585650629b251e0fbe58d523e541c507db",method:"GET",timeout:0};$.ajax(settings).done(function(t){var e=t.data.price.substr(0,15);$("#pricebnb").text("$"+e)});
                </script>
                <script>
-                  var settingsnft = {
-                     "url": "https://api.pancakeswap.info/api/v2/tokens/0xe42503115f2b4a37806a793222826fa04ca476e6",
-                     "method": "GET",
-                     "timeout": 0,
-                  };
-                  $.ajax(settingsnft).done(function (response) {
-                     var price = response.data["price"];
-                     var finalprice = price.substr(0,15)
-                     $("#pricenft").text("$"+finalprice);
-                  });
+                 var settingsnft={url:"https://api.pancakeswap.info/api/v2/tokens/0xe42503115f2b4a37806a793222826fa04ca476e6",method:"GET",timeout:0};$.ajax(settingsnft).done(function(t){var a=t.data.price.substr(0,15);$("#pricenft").text("$"+a)});
                </script>
                <script>
-                  var settingsbnb = {
-                     "url": "https://api.pancakeswap.info/api/v2/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-                     "method": "GET",
-                     "timeout": 0,
-                  };
-                  $.ajax(settingsbnb).done(function (response) {
-                     var price = response.data["price"];
-                     var finalprice = price.substr(0,6)
-                     $("#pricebinance").text("$"+finalprice);
-                  });
+                var settingsbnb={url:"https://api.pancakeswap.info/api/v2/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",method:"GET",timeout:0};$.ajax(settingsbnb).done(function(t){var a=t.data.price.substr(0,6);$("#pricebinance").text("$"+a)});
                </script>
                <script>
-                  var settingsbtc = {
-                     "url": "https://api.pancakeswap.info/api/v2/tokens/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
-                     "method": "GET",
-                     "timeout": 0,
-                  };
-                  $.ajax(settingsbtc).done(function (response) {
-                     var price = response.data["price"];
-                     var finalprice = price.substr(0,8)
-                     $("#pricebtc").text("$"+finalprice);
-                  });
+                var settingsbtc={url:"https://api.pancakeswap.info/api/v2/tokens/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",method:"GET",timeout:0};$.ajax(settingsbtc).done(function(t){var a=t.data.price.substr(0,8);$("#pricebtc").text("$"+a)});
                </script>
-               <!-- <p style="margin-bottom: 0;">$TFDao Price: 
-                  <a href="https://poocoin.app/tokens/0x01f8f4ee7e57fb05884b7253e98fc11f8cb19ef3">
-                  <span id="pricebnb" style="color: #4caf50;font-weight: bold;"></span>
-                  </a>
-                  </p>  -->
-               <div id="scroll-container">
-                  <div id="scroll-text">
-                     <div class="wow fadeIn sectionprice" style="display: flex;">
-                        <img src="https://www.velociraptortoken.com/assets/img/logo.svg?v=1.1" alt="">
-                        <span id="pricebnb" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        <!-- <span>|</span> -->
-                        <img src="assets/img/logonft.svg?v=1.1" alt="">
-                        <span id="pricenft" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        <img src="assets/img/bnb.svg?v=1.1" alt="">
-                        <span id="pricebinance" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        <img src="assets/img/btc.svg?v=1.2" alt="" style="width:95px !important;">
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        <span id="pricebtc" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
-                     </div>
-                  </div>
-               </div>
-               <!-- <div class="col-6 wow fadeIn sectionprice">
-                  <img src="assets/img/logonft.svg?v=1.1" alt="">
-                  <span>$0.0001212</span>
-                  </div> -->
+             <script>
+               document.write(unescape('%20%20%3Cdiv%20id%3D%22scroll-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22scroll-text%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22wow%20fadeIn%20sectionprice%22%20style%3D%22display%3A%20flex%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//www.velociraptortoken.com/assets/img/logo.svg%3Fv%3D1.1%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricebnb%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%21--%20%3Cspan%3E%7C%3C/span%3E%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/logonft.svg%3Fv%3D1.1%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricenft%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/bnb.svg%3Fv%3D1.1%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricebinance%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/btc.svg%3Fv%3D1.2%22%20alt%3D%22%22%20style%3D%22width%3A95px%20%21important%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricebtc%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E'))
+               </script>
             </div>
          </div>
       </section>
-      <!-- End Header Section -->
-      <!-- <div class="cs-height_80 cs-height_lg_80"></div> -->
       <div class="cs-hero cs-style1 cs-type2 cs-bg text-center  cs-ripple_version" data-src="assets/img/hero_bg_1.jpg?v=1.9" id="home">
          <div class="cs-dark_overlay"></div>
          <div class="container">
             <div class="raptorsectionimg cs-hero_img wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-               <!-- <img src="assets/img/hero_img_2.png" alt="Hero Image">
-                  <div class="cs-hero_img_sm">
-                    <img src="assets/img/hero_img_sm.png" alt="Hero Image">
-                  </div> -->
                <img class="" src="assets/img/illus.svg?v=1.3" alt="Velociraptor" width="100%">
             </div>
             <div class="cs-hero_text wow fadeIn" data-wow-duration="1s" data-wow-delay="0.45s">
@@ -149,9 +82,6 @@
             </div>
          </div>
       </div>
-      <!-- End Hero -->
-      <!-- <div class="cs-height_100 cs-height_lg_70"></div> -->
-      <!-- Start Services -->
       <section cs-hero cs-style1 cs-type2 cs-bg text-center  cs-ripple_version" data-src="assets/img/hero_bg_2.jpg?v=1.0" id="home">
          <div class="container">
             <div class="row">
@@ -433,10 +363,6 @@
       </section>
       <section style="background: url('assets/img/lastbg.jpg?v=1.1');">
         <br>
-        <!-- <div class="cs-seciton_heading cs-style1 text-uppercase text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-           <h3 class="cs-section_title cs-font_16 cs-font_14_sm cs-gradient_color">Market</h3>
-           <h2 class="cs-section_subtitle cs-m0 cs-font_36 cs-font_24_sm">Raptor Live Chart</h2>
-        </div> -->
         <br>
         <div class="container">
            <div class="row">
@@ -459,35 +385,10 @@
            </div>
         </div>
      </section>
-      <footer class="cs-footer text-center" style="background-color: #0d0c1e;">
-         <div class="container">
-            <div class="cs-height_100 cs-height_lg_70"></div>
-            <div class="cs-footer_logo wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-               <img src="assets/img/logos.svg" alt="logo" class="cs-hide_dark">
-               <img src="assets/img/logos.svg" alt="logo" class="cs-hide_white">
-            </div>
-            <div class="cs-height_25 cs-height_lg_25"></div>
-            <div class="cs-social_btns cs-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-               <a href="https://twitter.com/velociraptorbsc" class="cs-center cs-primary_color cs-accent_bg_hover cs-white_bg cs-white_color_hover">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                     <path fill="currentColor" d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z"/>
-                  </svg>
-               </a>
-               <a href="https://t.me/velociraptorofficial" class="cs-center cs-primary_color cs-accent_bg_hover cs-white_bg cs-white_color_hover">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="31.496" height="26.415" viewBox="0 0 31.496 26.415">
-                     <path id="Icon_awesome-telegram-plane" data-name="Icon awesome-telegram-plane" d="M31.409,6.933,26.655,29.348c-.359,1.582-1.294,1.976-2.623,1.23l-7.242-5.337L13.3,28.6a1.819,1.819,0,0,1-1.455.71l.52-7.376L25.784,9.809c.584-.52-.127-.809-.907-.288L8.283,19.969,1.139,17.733c-1.554-.485-1.582-1.554.323-2.3L29.4,4.669c1.294-.485,2.426.288,2,2.264Z" transform="translate(-0.002 -4.528)" fill="#fff"/>
-                  </svg>
-               </a>
-            </div>
-            <div class="cs-height_30 cs-height_lg_30"></div>
-         </div>
-         <div class="cs-height_85 cs-height_lg_25"></div>
-         <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <p style="color: #ff5722; font-size: 14px;">Team@RaptorNetwork.io</p>
-            <div class="cs-copyright text-center">Copyright 2022 | All Rights Reserved</div>
-         </div>
-         <div class="cs-height_25 cs-height_lg_25"></div>
-      </footer>
+     <script>
+      document.write(unescape('%20%20%20%20%20%20%3Cfooter%20class%3D%22cs-footer%20text-center%22%20style%3D%22background-color%3A%20%230d0c1e%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-height_100%20cs-height_lg_70%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-footer_logo%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%20data-wow-delay%3D%220.2s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/logos.svg%22%20alt%3D%22logo%22%20class%3D%22cs-hide_dark%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/logos.svg%22%20alt%3D%22logo%22%20class%3D%22cs-hide_white%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-height_25%20cs-height_lg_25%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-social_btns%20cs-center%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//twitter.com/velociraptorbsc%22%20class%3D%22cs-center%20cs-primary_color%20cs-accent_bg_hover%20cs-white_bg%20cs-white_color_hover%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20width%3D%2224%22%20height%3D%2224%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22currentColor%22%20d%3D%22M23.643%204.937c-.835.37-1.732.62-2.675.733a4.67%204.67%200%200%200%202.048-2.578a9.3%209.3%200%200%201-2.958%201.13a4.66%204.66%200%200%200-7.938%204.25a13.229%2013.229%200%200%201-9.602-4.868c-.4.69-.63%201.49-.63%202.342A4.66%204.66%200%200%200%203.96%209.824a4.647%204.647%200%200%201-2.11-.583v.06a4.66%204.66%200%200%200%203.737%204.568a4.692%204.692%200%200%201-2.104.08a4.661%204.661%200%200%200%204.352%203.234a9.348%209.348%200%200%201-5.786%201.995a9.5%209.5%200%200%201-1.112-.065a13.175%2013.175%200%200%200%207.14%202.093c8.57%200%2013.255-7.098%2013.255-13.254c0-.2-.005-.402-.014-.602a9.47%209.47%200%200%200%202.323-2.41l.002-.003Z%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/svg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//t.me/velociraptorofficial%22%20class%3D%22cs-center%20cs-primary_color%20cs-accent_bg_hover%20cs-white_bg%20cs-white_color_hover%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2231.496%22%20height%3D%2226.415%22%20viewBox%3D%220%200%2031.496%2026.415%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22Icon_awesome-telegram-plane%22%20data-name%3D%22Icon%20awesome-telegram-plane%22%20d%3D%22M31.409%2C6.933%2C26.655%2C29.348c-.359%2C1.582-1.294%2C1.976-2.623%2C1.23l-7.242-5.337L13.3%2C28.6a1.819%2C1.819%2C0%2C0%2C1-1.455.71l.52-7.376L25.784%2C9.809c.584-.52-.127-.809-.907-.288L8.283%2C19.969%2C1.139%2C17.733c-1.554-.485-1.582-1.554.323-2.3L29.4%2C4.669c1.294-.485%2C2.426.288%2C2%2C2.264Z%22%20transform%3D%22translate%28-0.002%20-4.528%29%22%20fill%3D%22%23fff%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/svg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-height_30%20cs-height_lg_30%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-height_85%20cs-height_lg_25%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container%20wow%20fadeIn%22%20data-wow-duration%3D%221s%22%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20style%3D%22color%3A%20%23ff5722%3B%20font-size%3A%2014px%3B%22%3ETeam@RaptorNetwork.io%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-copyright%20text-center%22%3ECopyright%202022%20%7C%20All%20Rights%20Reserved%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cs-height_25%20cs-height_lg_25%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3C/footer%3E'))
+      </script>
+      
       <!-- Script -->
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <script src="assets/js/plugins/jquery.slick.min.js"></script>
