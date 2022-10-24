@@ -7,7 +7,7 @@
 
 #scroll-text {
   text-align: right;
-  margin-left: -320px;
+  margin-left: -80px;
 
   /* animation properties */
   -moz-transform: translateX(-100%);

@@ -47,20 +47,57 @@
          <div class="container-fluid">
             <div class="row">
                <script>
-                var settings={url:"https://api.pancakeswap.info/api/v2/tokens/0x47845c585650629b251e0fbe58d523e541c507db",method:"GET",timeout:0};$.ajax(settings).done(function(t){var e=t.data.price.substr(0,15);$("#pricebnb").text("$"+e)});
+                  var settings = {
+                     "url": "https://api.pancakeswap.info/api/v2/tokens/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+                     "method": "GET",
+                     "timeout": 0,
+                  };
+                  $.ajax(settings).done(function (response) {
+                     var price = response.data["price"];
+                     var finalprice = price.substr(0,8)
+                     $("#pricebtc").text("$"+finalprice);
+                  });
                </script>
-               <script>
-                 var settingsnft={url:"https://api.pancakeswap.info/api/v2/tokens/0xe42503115f2b4a37806a793222826fa04ca476e6",method:"GET",timeout:0};$.ajax(settingsnft).done(function(t){var a=t.data.price.substr(0,15);$("#pricenft").text("$"+a)});
+                <script>
+                  var settingsbinance = {
+                     "url": "https://api.pancakeswap.info/api/v2/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                     "method": "GET",
+                     "timeout": 0,
+                  };
+                  $.ajax(settingsbinance).done(function (response) {
+                     var price = response.data["price"];
+                     var finalprice = price.substr(0,6)
+                     $("#pricebinance").text("$"+finalprice);
+                  });
                </script>
-               <script>
-                var settingsbnb={url:"https://api.pancakeswap.info/api/v2/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",method:"GET",timeout:0};$.ajax(settingsbnb).done(function(t){var a=t.data.price.substr(0,6);$("#pricebinance").text("$"+a)});
+                 <script>
+                  var settingsnft = {
+                     "url": "https://api.pancakeswap.info/api/v2/tokens/0xe42503115f2b4a37806a793222826fa04ca476e6",
+                     "method": "GET",
+                     "timeout": 0,
+                  };
+                  $.ajax(settingsnft).done(function (response) {
+                     var price = response.data["price"];
+                     var finalprice = price.substr(0,15)
+                     $("#pricenft").text("$"+finalprice);
+                  });
                </script>
-               <script>
-                var settingsbtc={url:"https://api.pancakeswap.info/api/v2/tokens/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",method:"GET",timeout:0};$.ajax(settingsbtc).done(function(t){var a=t.data.price.substr(0,8);$("#pricebtc").text("$"+a)});
-               </script>
-             <script>
-               document.write(unescape('%20%20%3Cdiv%20id%3D%22scroll-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22scroll-text%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22wow%20fadeIn%20sectionprice%22%20style%3D%22display%3A%20flex%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//www.velociraptortoken.com/assets/img/logo.svg%3Fv%3D1.1%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricebnb%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%21--%20%3Cspan%3E%7C%3C/span%3E%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/logonft.svg%3Fv%3D1.1%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricenft%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/bnb.svg%3Fv%3D1.1%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricebinance%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/btc.svg%3Fv%3D1.2%22%20alt%3D%22%22%20style%3D%22width%3A95px%20%21important%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22pricebtc%22%20style%3D%22font-size%3A%2014px%3Bmargin-top%3A%205px%3Bcolor%3A%20%234caf50%3B%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E'))
-               </script>
+               <div id="scroll-container">
+                  <div id="scroll-text">
+                     <div class="wow fadeIn sectionprice" style="display: flex;">
+                        <!-- <span>|</span> -->
+                        <img src="assets/img/logonft.svg?v=1.1" alt="">
+                        <span id="pricenft" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <img src="assets/img/bnb.svg?v=1.1" alt="">
+                        <span id="pricebinance" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <img src="assets/img/btc.svg?v=1.2" alt="" style="width:95px !important;">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span id="pricebtc" style="font-size: 14px;margin-top: 5px;color: #4caf50;"></span>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </section>
@@ -82,7 +119,7 @@
          </div>
       </div>
       <section cs-hero cs-style1 cs-type2 cs-bg text-center  cs-ripple_version" data-src="assets/img/hero_bg_2.jpg?v=1.0" id="home">
-         <div class="container">
+      <div class="container">
             <div class="row">
                <div style="padding: 40px;">
                   <h1 class="cs-hero_title cs-font_60 cs-font_36_sm cs-bold text-center">
@@ -345,14 +382,9 @@
          <br>
          <div class="container">
             <div class="row">
-               <div class="col-12 col-md-6">
+               <div class="col-12 col-md-12">
                   <div class="nftbox" style="padding: 0;">
                      <iframe width=100% height="557" frameBorder="0" scrolling="no" src="https://coinbrain.com/coins/bnb-0xe42503115f2b4a37806a793222826fa04ca476e6/lite?theme=custom&accent=ff5722&padding=16&background=0e0d22&currency=USD"></iframe>
-                  </div>
-               </div>
-               <div class="col-12 col-md-6">
-                  <div class="nftbox" style="padding: 0;">
-                     <iframe width=100% height="557" frameBorder="0" scrolling="no" src="https://coinbrain.com/coins/bnb-0x47845c585650629b251e0fbe58d523e541c507db/lite?theme=custom&accent=ff5722&padding=16&background=0e0d22&currency=USD"></iframe>
                   </div>
                </div>
                <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> 
