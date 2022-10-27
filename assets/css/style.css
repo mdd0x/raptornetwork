@@ -1,6 +1,58 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+.cs-seciton_heading{
+  text-align: left;
+}
+li {
+  color: #fff;
+  font-weight: 200;
+}
+.cs-main_header_right li  {
+  color: #000;
+  font-weight: 200;
+}
+.cs-accent_new {
+  color: #fff !important;
+  background-color: green !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.cs-munu_toggle {
+  color: #000 !important;
+  height: 1px !important;
+  width: 25px !important;
+}
+
+.text-blank{
+  color: #000 !important;
+}
+.text-white{
+  color: #fff !important;
+}
+.text-left {
+  text-align: left;
+}
+.font-thin {
+  font-weight: 200 ;
+}
+.font-thin-reguler {
+  font-weight: 300 ;
+}
+.new-heading{
+  font-size: 50px !important;
+}
+.mainbtn {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
+.secondbtn {
+  background-color: transparent !important;
+  color: #000 !important;
+  border: 2px solid #000 !important;
+}
 
 .raptorsectionimg img{
   margin: 15px !important;
@@ -11,7 +63,8 @@
 body,
 html {
   color: #6C7C8C;
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5em;
@@ -32,8 +85,6 @@ h6 {
   font-weight: 600;
   line-height: 1.2em;
   /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Paytone One', sans-serif;
-
 }
 
 .cs-primary_font {
@@ -984,7 +1035,7 @@ hr {
   top: 2px;
   width: 5px;
   height: 15px;
-  background: linear-gradient(108.18deg, #EA4C89 -2.02%, #4D44C6 100%);
+  background: black;
 }
 
 .cs-btn_group {
@@ -1594,9 +1645,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 }
 
 .cardy{
-  background-color: #0e0d20 !important;
-    border-radius: 5px !important;
-    border-bottom: 5px solid #ff5722 !important;
+  background-color: #000 !important;
+    border-radius: 10px !important;
 }
 .nftbox{
   padding: 20px;
@@ -2200,8 +2250,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 
 header {
   /* background-color: #05182b !important; */
-  background: rgb(29,33,84) !important;
-background: linear-gradient(163deg, rgb(18, 21, 57) 0%, rgba(13,11,27,1) 100%) !important;
+  background: #fff !important;
+/* background: linear-gradient(163deg, rgb(18, 21, 57) 0%, rgba(13,11,27,1) 100%) !important; */
 }
 
 .cs-site_header .cs-btn.cs-style6 {
@@ -3095,11 +3145,12 @@ li.menu-item-has-children
 }
 
 .cs-iconbox{
-  background-color: #1a1a1a8a !important;
   border-radius: 9px;
-  border: 3px solid black;
-  box-shadow: 3px 4px 4px #ff5722;
+  color: #000;
+  background: rgb(106,149,208);
+  background: linear-gradient(163deg, rgba(106,149,208,0.18951330532212884) 0%, rgba(184,187,252,0.5760679271708684) 100%);
 }
+
 .cs-iconbox.cs-style1 {
   padding: 40px;
 }
